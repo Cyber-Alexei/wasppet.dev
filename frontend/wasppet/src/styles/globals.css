@@ -1,0 +1,163 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/components';
+
+/*LIGHT*/
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 300;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-Light.woff'),
+    format('woff'),
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 300;
+    font-style: italic;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-LightItalic.woff'),
+    format('woff'),
+}
+
+/*REGULAR*/
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 400;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-Regular.woff'),
+    format('woff'),
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 400;
+    font-style: italic;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-Italic.woff'),
+    format('woff'),
+}
+
+/*MEDIUM*/
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 500;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-Medium.woff'),
+    format('woff'),
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 500;
+    font-style: italic;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-MediumItalic.woff'),
+    format('woff'),
+}
+
+/*SEMIBOLD*/
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 600;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-SemiBold.woff'),
+    format('woff'),
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 600;
+    font-style: italic;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-SemiBoldItalic.woff'),
+    format('woff'),
+}
+
+/*BOLD*/
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 700;
+    font-style: italic;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-BoldItalic.woff'),
+    format('woff'),
+}
+
+/*EXTRABOLD*/
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 800;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-ExtraBold.woff'),
+    format('woff'),
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-weight: 800;
+    font-style: italic;
+    src: 
+    url('../../public/fonts/open_sans/OpenSans-ExtraBoldItalic.woff'),
+    format('woff'),
+}
+
+:root {
+        --primary-color: #ffbf00;
+        --secondary-color: #dfa600;
+        --primary-background: #1e1e1e;
+        --secondary-background: #ffffff;
+        --tertiary-background: #ededed;
+        --fourth-background: #303030;
+        --primary-font-color: #ffffff;
+        --secondary-font-color: #f5f5f5;
+        --custom-light-gray: #d3d3d3;
+        --custom-light-gray-2: #a2a2a2;
+        --custom-light-gray-3: #747474;
+        --alert-color: #ff7557;
+}
+
+
+#html {
+    min-height: 100vh;
+    height: auto;
+    font-family: 'opensans', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+#body-id {
+    font-family: 'opensans', sans-serif !important;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        font-family: 'opensans', sans-serif !important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+.background-gradient-1 {
+    background-image: linear-gradient(to top right, #000000, #000000, #ffbf00);
+}
+
+.custom-placeholder-font-size::placeholder {
+    font-size: 14px;
+}
