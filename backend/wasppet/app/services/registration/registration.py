@@ -21,13 +21,13 @@ def send_confirmation_email(user_email, confirmation_link):
     message = f'Please confirm your account by clicking the following link: {confirmation_link}'
     from_email = settings.EMAIL_HOST_USER
     recipient_list = [user_email]
-    
-    send_mail(subject, message, from_email, recipient_list)
 
+    send_mail(subject, message, from_email, recipient_list)
+# For password changing, or email changing
 def send_verification_code_email(user_email, code):
     subject = 'Wasppet - Verification code'
     message = f'The code for this operation is: {code}'
     from_email = settings.EMAIL_HOST_USER
     recipient_list = [user_email]
-    
+
     send_mail(subject, message, from_email, recipient_list)

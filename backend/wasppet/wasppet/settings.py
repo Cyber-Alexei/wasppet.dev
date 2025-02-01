@@ -164,6 +164,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # URL in the browser for serving media files
 MEDIA_URL = '/media/'
 
-# Default primary key field type
+# Default primary key field type in the ORM
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
